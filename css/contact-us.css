@@ -10,6 +10,11 @@ html {
     height: 100vh;
 }
 
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .box-shadow {
     -webkit-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
@@ -21,6 +26,7 @@ html {
     grid-template-rows: 1fr 13fr 1fr;
     height: 100%;
     grid-row-gap: 1em;
+    background-color:#9BC1BC;
 }
 
 .r1,
@@ -33,6 +39,8 @@ html {
 
 .r3 {
     text-align: center;
+    color: #F4F1BB;
+    background-color:#9BC1BC;
 }
 
 .r2 {
@@ -40,8 +48,9 @@ html {
     background-color: #f1f1f1;
 }
 
-.one-column {
+.two-column {
     display: grid;
+    grid-template-columns: 2fr 8fr;
     background-color: #FFF;
     grid-column-gap: 1em;
 }
@@ -62,6 +71,23 @@ html {
     padding-bottom: 15px;
 }
 
+.left-nav {
+    list-style-type: none;
+}
+
+.left-nav>li>a {
+    display: block;
+    padding: 15px 0px 15px 30px;
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 0.7s;
+}
+
+.left-nav>li>a:hover {
+    background-color: #8d8c8c;
+}
+
 .c2 {
     padding: 2em;
 }
@@ -72,13 +98,19 @@ html {
     width: 100%;
 }
 
-.login-form {
+.c2>img {
+    width: 100%;
+    align-self: center;
+    max-height: 130px;
+}
+
+.contact-form {
     width: 500px;
-    height: 290px;
+    height: 500px;
     margin: 100px auto;
 }
 
-.login-input {
+.contact-input {
     width: 91%;
     padding: 15px;
     margin: 5px;
@@ -89,12 +121,4 @@ html {
     background-color: #CCC;
     float: right;
     margin-top: 12px;
-}
-
-.error-message {
-    color: red;
-    margin-top: 5px;
-    padding: 7px;
-    display: block;
-    display: none;
 }
